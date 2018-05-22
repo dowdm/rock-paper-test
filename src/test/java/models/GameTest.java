@@ -15,21 +15,21 @@ public class GameTest{
         @Test
         public void winCheck_checkForRockOverScissors_rockwins() throws Exception {
             Game testGame = new Game();
-            String expected = "Rock wins!";
+            String expected = "Rock wins! Congratulations player 1";
             assertEquals(expected, testGame.winCheck("rock", "scissors"));
         }
 
         @Test
         public void winCheck_checkForScissorsOverPaper_scissorswins() throws Exception {
             Game testGame = new Game();
-            String expected = "Scissors wins!";
+            String expected = "Scissors wins! Congratulations player 1";
             assertEquals(expected, testGame.winCheck("scissors", "paper"));
         }
 
         @Test
         public void winCheck_checkForPaperOverRock_paperwins() throws Exception {
             Game testGame = new Game();
-            String expected = "Paper wins!";
+            String expected = "Paper wins! Congratulations player 1";
             assertEquals(expected, testGame.winCheck("paper", "rock"));
         }
 
@@ -43,11 +43,9 @@ public class GameTest{
         @Test
         public void winCheck_checkForReverseConditions_rockwins() throws Exception {
             Game testGame = new Game();
-            String expected = "Rock wins!";
+            String expected = "Rock wins! Congratulations player 2";
             assertEquals(expected, testGame.winCheck("scissors", "rock"));
         }
-
-
 
 
 
