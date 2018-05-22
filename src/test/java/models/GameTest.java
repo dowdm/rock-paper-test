@@ -40,6 +40,13 @@ public class GameTest{
             assertEquals(expected, testGame.winCheck("paper", "paper"));
         }
 
+        @Test
+        public void winCheck_checkForReverseConditions_rockwins() throws Exception {
+            Game testGame = new Game();
+            String expected = "Rock wins!";
+            assertEquals(expected, testGame.winCheck("scissors", "rock"));
+        }
+
 
 
 
