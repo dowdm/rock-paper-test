@@ -15,7 +15,7 @@ public class Game {
         } else if (userOne.equals("scissors") && userTwo.equals("paper")){
             return "Scissors wins!";
         } else if (userOne.equals("paper") && userTwo.equals("rock")){
-            return "Scissors wins!";
+            return "Paper wins!";
         } else {
             return null;
         }

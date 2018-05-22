@@ -33,6 +33,13 @@ public class GameTest{
             assertEquals(expected, testGame.winCheck("paper", "rock"));
         }
 
+        @Test
+        public void winCheck_checkForDraw_itsadraw() throws Exception {
+            Game testGame = new Game();
+            String expected = "It's a draw!";
+            assertEquals(expected, testGame.winCheck("paper", "paper"));
+        }
+
 
 
 
