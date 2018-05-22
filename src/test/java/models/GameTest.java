@@ -12,5 +12,21 @@ public class GameTest{
             assertEquals(expected, testGame.validateInput("rock"));
         }
 
+        @Test
+        public void winCheck_checkForRockOverScissors_rockwins() throws Exception {
+            Game testGame = new Game();
+            String expected = "Rock wins!";
+            assertEquals(expected, testGame.winCheck("rock", "scissors"));
+        }
+        @Test
+        public void winCheck_checkForRockOverScissors_rockwins() throws Exception {
+            Game testGame = new Game();
+            String expected = "Rock wins!";
+            assertEquals(expected, testGame.winCheck("rock", "scissors"));
+        }
+
+
+
+
 
 }

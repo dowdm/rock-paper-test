@@ -9,4 +9,11 @@ public class Game {
             return false;
         }
     }
+    public String winCheck(String userOne, String userTwo){
+        if (userOne.equals("rock") && userTwo.equals("scissors")) {
+            return "Rock wins!";
+        } else {
+            return null;
+        }
+    }
 }
