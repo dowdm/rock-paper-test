@@ -12,6 +12,10 @@ public class Game {
     public String winCheck(String userOne, String userTwo){
         if (userOne.equals("rock") && userTwo.equals("scissors")) {
             return "Rock wins!";
+        } else if (userOne.equals("scissors") && userTwo.equals("paper")){
+            return "Scissors wins!";
+        } else if (userOne.equals("paper") && userTwo.equals("rock")){
+            return "Scissors wins!";
         } else {
             return null;
         }
